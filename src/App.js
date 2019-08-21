@@ -1,8 +1,12 @@
 import React from 'react';
+import Header from './components/Header/Header';
+import CategoriesProvider from './context/CategoriesContext';
 
 function App() {
   return (
-    <h1>hello</h1>
+    <CategoriesProvider> {/*<Fragment> context lo sustituye*/}
+      <Header />
+    </CategoriesProvider> //</Fragment>
   );
 }
 
