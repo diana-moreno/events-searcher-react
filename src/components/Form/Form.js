@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { CategoriesConsumer } from '../../context/CategoriesContext'
 
 class Form extends Component {
   state = {
@@ -31,6 +32,18 @@ class Form extends Component {
                 className='uk-select'
                 type='text'
               >
+                <CategoriesConsumer>
+                  {(value) => ( /*tiene que ser una función*/
+                    value.categories.map(category => (
+                      <option
+                        key={category.id}
+                        value={category.id}
+                      >
+                        {category.name_localized}
+                      </option>
+                    ))
+                  )}
+                </CategoriesConsumer>
               </select>
             </div>
 
