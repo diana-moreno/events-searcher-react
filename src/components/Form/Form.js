@@ -2,10 +2,50 @@ import React, { Component } from 'react';
 
 class Form extends Component {
   state = {
-
+    name: '',
+    category: ''
   }
   render() {
-    return();
+    return(
+      <form>
+        <fieldset className='uk-fieldset'>
+
+          <legend className='uk-legend uk-text-center'> {/*legend crea un titulo para los campos de fieldset*/}
+            Search your event by name or category
+          </legend>
+
+          <div className='uk-column-1-3@m uk-margin'> {/*3 columnas*/}
+
+            <div className='uk-margin' uk-margin='true'>
+              <input
+                name='name'
+                className='uk-input'
+                type='text'
+                placeholder='Event name or city'
+              />
+            </div>
+
+            <div className='uk-margin' uk-margin='true'>
+              <select
+                name='category'
+                className='uk-select'
+                type='text'
+              >
+              </select>
+            </div>
+
+            <div>
+              <input
+                className='uk-button uk-button-danger'
+                type='submit'
+                value='Search events'
+              />
+            </div>
+
+          </div>
+        </fieldset>
+      </form>
+    );
   }
 }
 
