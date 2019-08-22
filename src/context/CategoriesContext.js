@@ -30,7 +30,7 @@ class CategoriesProvider extends Component {
     return(
       <CategoriesContext.Provider
         value={{
-          categories : this.state.categories
+          categories : this.state.categories,
         }}
       >
         {this.props.children} {/*En APP.js, el hijo tiene que estar en su lugar*/}

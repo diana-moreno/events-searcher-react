@@ -6,6 +6,15 @@ class Form extends Component {
     name: '',
     category: ''
   }
+
+  // si el usuario agrega un evento o categoría
+  handleDataEvents = e => {
+    this.setState({
+      [e.target.name] : e.target.value
+
+    })
+  }
+
   render() {
     return(
       <form>
@@ -23,6 +32,7 @@ class Form extends Component {
                 className='uk-input'
                 type='text'
                 placeholder='Event name or city'
+                onChange={this.handleDataEvents}
               />
             </div>
 
@@ -31,7 +41,9 @@ class Form extends Component {
                 name='category'
                 className='uk-select'
                 type='text'
+                onChange={this.handleDataEvents}
               >
+                <option value=''>-- Select category --</option>
                 <CategoriesConsumer>
                   {(value) => ( /*tiene que ser una función*/
                     value.categories.map(category => (
