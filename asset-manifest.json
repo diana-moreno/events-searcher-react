@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/events-searcher-react/static/css/main.62cb1aec.chunk.css",
+    "main.js": "/events-searcher-react/static/js/main.35407474.chunk.js",
+    "main.js.map": "/events-searcher-react/static/js/main.35407474.chunk.js.map",
+    "runtime~main.js": "/events-searcher-react/static/js/runtime~main.1cac3e69.js",
+    "runtime~main.js.map": "/events-searcher-react/static/js/runtime~main.1cac3e69.js.map",
+    "static/js/2.05d453e0.chunk.js": "/events-searcher-react/static/js/2.05d453e0.chunk.js",
+    "static/js/2.05d453e0.chunk.js.map": "/events-searcher-react/static/js/2.05d453e0.chunk.js.map",
+    "index.html": "/events-searcher-react/index.html",
+    "precache-manifest.2c840321bb312db7602cd5f60e19e807.js": "/events-searcher-react/precache-manifest.2c840321bb312db7602cd5f60e19e807.js",
+    "service-worker.js": "/events-searcher-react/service-worker.js",
+    "static/css/main.62cb1aec.chunk.css.map": "/events-searcher-react/static/css/main.62cb1aec.chunk.css.map"
+  }
+}
