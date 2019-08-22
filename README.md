@@ -8,6 +8,10 @@ In this page you can obtain information about events of several categories. Proj
 
 ### **Features**
 
+- The web allows to search events information with two criteria: the event name or City, and the category which belongs.
+- The searcher finds matches in an external API (Eventbrite API).
+- The results are shown in an organized grid layout.
+- In every card event has included a 'More information' button to click in to open a new website with all the information about it.
 
 
 ### **What I learned**
@@ -16,6 +20,7 @@ In this page you can obtain information about events of several categories. Proj
 - Obtain data from Eventbrite API.
 - Generate layout with UIkit classes.
 - Make queries to the API with NPM Axios through async functions.
+
 
 ### **Resources**
 
@@ -53,7 +58,6 @@ npm start
 ```
 
 - Otherwise, you can run the final project here: https://diana-moreno.github.io/events-searcher-react/
-
 
 
 ### Available Scripts
