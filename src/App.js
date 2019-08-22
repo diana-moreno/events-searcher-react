@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import Form from './components/Form/Form';
 import CategoriesProvider from './context/CategoriesContext';
 import EventsProvider from './context/EventsContext';
+import EventsList from './components/EventsList/EventsList';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Header />
         <div className='uk-container'>
           <Form />
+          <EventsList />
         </div>
       </CategoriesProvider> {/*</Fragment>*/}
     </EventsProvider>
