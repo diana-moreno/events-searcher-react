@@ -19,7 +19,7 @@ class CategoriesProvider extends Component {
 
   getCategories = async () => { //await siempre tiene que ir con una función asincrona. Es lo mismo que la forma antigua de get y then.
     let url = `https://www.eventbriteapi.com/v3/categories/?token=${this.token}`/*&locale=es_ES*/ //ojo, no son comillas, son: ``
-    let categories = await axios.get(url); // hace la consulta
+    let categories = await axios.get(url); // hace la consulta, el método get viene por defecto, se puede poner o no.
     //console.log(categories);
     this.setState({
       categories: categories.data.categories
